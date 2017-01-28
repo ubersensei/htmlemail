@@ -1,0 +1,286 @@
+html, body {
+    height: 100%; }
+
+html {
+    box-sizing: border-box; }
+
+*, *:before, *:after {
+    box-sizing: inherit; }
+
+body {
+    font-size: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.625;
+    color: #26292a;
+    background-color: #f5f5f5; }
+
+a:link, a:visited, a:active, a:hover {
+    text-decoration: inherit;
+    color: inherit; }
+
+.primaryColor {
+    color: #1D4E89; }
+
+.secondaryColor {
+    color: #ff5a5f; }
+
+.bold {
+    font-weight: bold; }
+
+.headerText3 {
+    font-size: 1.5em;
+}
+
+#main {
+    margin: 0 auto;
+    min-height: 300px;
+    max-width: 600px;
+    padding: 1em 2em 3em 2em;
+    background-color: #ffffff; }
+
+#logo {
+    position: relative;
+    margin: 0 0 2em 0;
+    font-size: 2em;
+    overflow: hidden; }
+
+.logoBorder {
+    position: relative;
+    margin: 0 0.3em 0 0;
+    height: 1.218em;
+    width: 1em;
+    font-size: 0.7em;
+    border: 3px solid #1D4E89; }
+
+.logoQuestion {
+    padding: 0 0.15em 0 0.1em;
+    color: #ff5a5f;
+    font-weight: bold;
+    font-style: italic; }
+
+.logo_what {
+    color: #1D4E89;
+    font-weight: bold;
+    font-size: .7em;
+    margin-right: 0.0893em; }
+
+.logo_iffs {
+    letter-spacing: 0.0625em;
+    color: #ff5a5f;
+    font-style: italic; }
+
+.messageBody {
+    margin: 0.5em 0; }
+
+#rules {
+    max-width: 22em;
+    margin: 3em 0 0 0; }
+    .ruleBlock {
+        border-top: 1px solid #dce0e0;
+        margin: 0.3em 0 0 0;
+        clear: both; }
+    .leftNumber {
+        float: left;
+        font-size: 2em;
+        line-height: 1.2;
+        color: #c4c4c4;
+        padding-bottom: 0.5em;
+    }
+    .ruleContent {
+        margin-left: 2.5em;
+        padding: 0 0 0 0;
+        overflow: hidden; }
+
+
+
+#game {
+    margin: 4em 0 0 0;
+    clear: both;
+    border: 1px solid #dce0e0;
+    overflow: hidden; }
+    .shadow {
+        -moz-box-shadow:    3px 4px 4px #999;
+        -webkit-box-shadow: 3px 4px 4px #999;
+        box-shadow:         3px 4px 4px #999;  }
+    #gameHeader {
+        position: relative;
+        height: 5em;
+        line-height: 5em;
+        padding: 1em;
+        text-align: left;
+        clear: both;
+        border-bottom: 1px solid #82888a; }
+        .selfie {
+            position: relative;
+            height: 3em;
+            width: 8em;
+            text-align: left;
+            float: left;
+            overflow: hidden;
+            color: #ffffff; }
+        .selfie:hover {
+            cursor: pointer; }
+        .selfie .imgWrapper {
+            position: relative;
+            height: 1.5em;
+            width: 1.5em;
+            font-size: 2em;
+            line-height: 1.5em;
+            text-align: center;
+            color: #ffffff;
+            background-color: #1D4E89;
+            float: left;
+            overflow: hidden; }
+        .selfie .imgWrapper img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 100%;
+            width: auto;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+        .selfie .imgWrapper img.portrait {
+            width: 100%;
+            height: auto; }
+        .selfie .onlineStatus {
+            position: absolute;
+            top: 0.2em;
+            left: 0.2em;
+            width: 0.5em;
+            height: 0.5em;
+            background-color: #f5f5f5;
+            -moz-border-radius: 0.25em;
+            -webkit-border-radius: 0.25em;
+            border-radius: 0.25em; }
+        .selfie .grey {
+            background-color: #f5f5f5; }
+        .selfie .green {
+            background-color: #4CD964; }
+        .selfie .name {
+            height: 1.5em;
+            line-height: 1.5em;
+            color: #26292a;
+            padding-left: 0.2em;
+            overflow: hidden;
+            text-align: left;
+            font-weight: bold;
+            background-color: #ffffff;
+            border-top: 1px solid #c4c4c4;
+            border-right: 1px solid #c4c4c4; }
+        .selfie .stats {
+            position: relative;
+            height: 1.5em;
+            line-height: 1.5em;
+            color: #26292a;
+            overflow: hidden;
+            text-align: left;
+            padding-left: 0.2em;
+            background-color: #ffffff;
+            border-right: 1px solid #c4c4c4;
+            border-bottom: 1px solid #c4c4c4; }
+        .selfie .stats .star {
+            float: left;
+            position: relative;
+            top: 0.2em;
+            font-size: 1.2em;
+            color: #1D4E89; }
+        .selfie .stats .starValue {
+            font-weight: bold;
+            float: left;
+            font-size: 0.75em;
+            height: 2em;
+            line-height: 2;
+            padding-left: 0.1em; }
+        .selfie .stats .personality {
+            float: left;
+            font-size: 0.75em;
+            height: 2em;
+            line-height: 2;
+            padding-left: 0.6em;
+            font-weight: bold; }
+        .selfie .stats .personality .BHTL {
+            color: #ff5a5f; }
+
+        .score {
+            float: left;
+            text-align: center;
+            margin: 0 1em;
+            color: #26292a; }
+        .score span {
+            display: inline; }
+        .score .label, .score .time {
+            text-align: center;
+            font-size: .75em;
+            line-height: 1;
+            color: #c4c4c4; }
+        .score .label {
+            padding-left: 0.5em; }
+        .score .potShare, .score .headtoheadResult {
+            font-size: 1.2em;
+            font-weight: bold;
+            line-height: 1.2em;
+            height: 1.2em; }
+        .score .headtoheadResult {
+            position: relative;
+            overflow: hidden; }
+        .score .headtoheadResult > div {
+            float: left; }
+        .score .headtoheadResult .dollar {
+            margin-left: 0.5em; }
+        .score .headtoheadResult .icons {
+            float: left;
+            color: #ff5a5f;
+            font-size: 1.5em;
+            position: relative;
+            top: -0.1em;
+            margin-right: -0.2em; }
+        .score .headtoheadResult .value {
+            float: left; }
+    #gameContent {
+        padding: 2em 1em 1em 1em; }
+    #challengeAnsweringArea {
+        margin-top: 2em;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 3em; }
+    #remainingCharacters {
+        /*float: right;*/
+        font-size: 0.875em;
+        position: absolute;
+        top: 1em;
+        right: 0;
+        color: #c4c4c4; }
+    #remainingCharacters .value {
+        font-weight: bold;
+        color: #82888a;
+        margin-right: 0.2em; }
+    #textArea {
+        border: 1px solid #dce0e0;
+        padding: 0.2em 0.5em;
+        height: 8em; }
+        #placeholder {
+            color: #c4c4c4; }
+
+    .button_2H_secondary {
+        float: right;
+        margin: 1em 0 0 0;
+        padding: 0 0.5em;
+        color: #ffffff;
+        max-width: 25em;
+        background-color: #ff5a5f;
+        border-bottom: 2px solid #cc484c;
+        height: 2em;
+        line-height: 2em;
+        text-align: center;
+        overflow: hidden;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px; }
+    .button_2H_secondary:hover {
+        background-color: #ff7b7f;
+        cursor: pointer; }
+
+@media all and (max-width: 500px), (max-device-width: 500px) {
+    .selfie {
+        width: 3em;} }
